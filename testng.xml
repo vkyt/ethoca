@@ -1,0 +1,18 @@
+<suite name="Ethoca Magic Mouse Demo" verbose="10">
+    <parameter name="selenium-browser" value="chrome" />
+    <test name="Buy the Magic Mouse" preserve-order="true">
+        <classes>
+            <class name="com.ethoca.test.suite.SimpleTest">
+                <methods>
+                    <include name="goToSite" />
+                    <include name="goToAccessories" />
+                    <include name="addToCart" />
+                    <include name="checkOutStep1" />
+                    <include name="checkOutStep2" />
+                    <include name="verifyOrder" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
